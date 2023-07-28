@@ -1,0 +1,25 @@
+/* OrderSummary.css */
+.OrderSummary button {
+    background-color: #ff5050;
+    flex-shrink: 0;
+    margin-left: 10px;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .OrderSummary button:hover {
+    background-color: #cc0000;
+  }
+  
+  .OrderSummary div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .OrderSummary div button {
+    margin: 0;
+  }
+  

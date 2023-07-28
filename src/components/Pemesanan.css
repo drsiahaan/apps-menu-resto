@@ -1,0 +1,150 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.OrderSummary {
+  margin-top: 20px;
+  border-top: 2px solid #ccc;
+  padding-top: 20px;
+}
+
+.OrderSummary h2 {
+  margin-bottom: 10px;
+}
+
+.OrderSummary ul {
+  margin: 0;
+  padding: 0;
+}
+
+.OrderSummary li {
+  margin-bottom: 5px;
+}
+
+.OrderSummary button {
+  background-color: #ff5050;
+}
+
+.OrderSummary button:hover {
+  background-color: #cc0000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.OrderSummary h3 {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  .OrderSummary {
+    margin-top: 10px;
+  }
+}
+
+/* Responsivitas untuk tablet dan layar berukuran kecil */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .App {
+    padding: 20px;
+  }
+}
+
+/* Responsivitas untuk layar besar atau desktop */
+@media (min-width: 1025px) {
+  .App {
+    padding: 30px;
+  }
+}
+
+/* Kode CSS sebelumnya */
+
+li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* Tambahkan properti CSS berikut */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+button {
+  flex-shrink: 0; /* Tambahkan ini untuk mencegah tombol menyusut */
+  margin-left: 10px; /* Tambahkan jarak antara nama makanan dan tombol */
+}
+
+/* Kode CSS sebelumnya */
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Kode CSS sebelumnya */
+
+.Modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.Modal h2 {
+  margin-top: 0;
+}
+
+.Modal button {
+  margin-right: 10px;
+}
